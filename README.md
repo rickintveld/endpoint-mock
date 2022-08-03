@@ -2,18 +2,33 @@
 
 # Usage
 
-<!-- usage -->
-
 ```sh-session
-$ yarn add -g endpoint-mock
-$ endpoint-mock COMMAND
-running command...
-$ endpoint-mock (--version)
-endpoint-mock/0.0.1 darwin-x64 node-v16.16.0
-$ endpoint-mock --help [COMMAND]
-USAGE
-  $ endpoint-mock COMMAND
-...
-```
+$ ./bin/run endpoint
+Answer the questions...
 
-<!-- usagestop -->
+Response URL
+https://fakerapi.it/api/v1/custom?_quantity=2&firstName=firstName&lastName=lastName&city=city&country=country&postcode=postcode
+
+Response object
+{
+    "status": "OK",
+    "code": 200,
+    "total": 2,
+    "data": [
+        {
+            "firstName": "Madilyn",
+            "lastName": "Pfeffer",
+            "city": "South Malachimouth",
+            "country": "Greenland",
+            "postcode": "45850"
+        },
+        {
+            "firstName": "Godfrey",
+            "lastName": "Cole",
+            "city": "Beermouth",
+            "country": "Macao",
+            "postcode": "34103"
+        }
+    ]
+}
+```
