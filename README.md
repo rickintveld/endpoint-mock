@@ -3,6 +3,10 @@
 # Usage
 
 ```sh-session
+yarn run build
+```
+
+```sh-session
 $ ./bin/run endpoint
 Answer the questions...
 
